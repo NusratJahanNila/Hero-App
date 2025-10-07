@@ -21,11 +21,11 @@ const Navbar = () => {
                 </div>
                 <NavLink
                     to='/'
-                    className="btn  text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-bold">
+                    className="btn  md:text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-bold">
                     <img
                         src={logoImg}
                         alt="logo"
-                        className='w-10'
+                        className='md:w-10 w-5'
                     />
                     HERO.IO
                 </NavLink>
