@@ -1,0 +1,218 @@
+[
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "PhotoMaster Pro",
+    "companyName": "PixelWorks Inc.",
+    "id": 1,
+    "description": "PhotoMaster Pro is a full-featured photo editing application designed for both casual users and professionals. With advanced filters, layers, and blending modes, users can achieve impressive results on the go. The app supports RAW image processing and includes intuitive tools for cropping, color correction, retouching, and masking. In addition, PhotoMaster Pro has built-in tutorials, social sharing, and integration with cloud storage, making it easy to manage and share your best work. Regular updates add new effects and improve performance, and the support team helps resolve issues quickly.",
+    "size": 124,
+    "reviews": 3.4,
+    "ratingAvg": 4.5,
+    "downloads": 9,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1400 },
+      { "name": "5 star", "count": 1521 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "FitTrack Daily",
+    "companyName": "HealthSync Ltd.",
+    "id": 2,
+    "description": "FitTrack Daily is a health and fitness tracking application that encourages users to meet their daily goals. It includes step counting, nutrition tracking, hydration reminders, sleep analytics, and workout logging features. Users can join challenges, track progress over time, and export data for more advanced analysis. The app also integrates with wearable devices and external sensors to aggregate your health metrics. Community features allow you to form groups, share achievements, and motivate friends on their fitness journey.",
+    "size": 88,
+    "reviews": 2.2,
+    "ratingAvg": 4.2,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 740 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "BudgetBuddy",
+    "companyName": "FinSmart Solutions",
+    "id": 3,
+    "description": "BudgetBuddy helps users manage their personal finances in a simple and intuitive way. It allows you to categorize expenses, set spending limits, receive alerts, and visualize cash flow with charts. The app supports multiple accounts, recurring transactions, and budget forecasts. You can also export data as CSV or integrate with your bank (read-only) for automatic import of transactions. The goal is to empower users to save more, cut unnecessary expenses, and better understand their financial habits over time. Regular insights and spending tips help users improve their money decisions.",
+    "size": 55,
+    "reviews": 1.3,
+    "ratingAvg": 4.6,
+    "downloads": 4.2,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 515 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes uxwing/download/12-application/mobile-app-icon.png",
+    "title": "LangLearner",
+    "companyName": "EduVerse",
+    "id": 4,
+    "description": "LangLearner is a language learning platform focused on immersive, bite-sized lessons and interactive exercises. Users can explore vocabulary, grammar, pronunciation, and conversational practice in over 25 languages. The app uses spaced repetition algorithms, speech recognition, and gamified progress tracking to make learning fun and effective. You can follow thematic challenges, practice speaking with native speakers, and track your long-term progress. LangLearner also supports offline mode so that users can continue learning on the go without needing constant internet connectivity.",
+    "size": 95,
+    "reviews": 3.0,
+    "ratingAvg": 4.4,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 110 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1350 },
+      { "name": "5 star", "count": 1035 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "TravelMate",
+    "companyName": "WanderTech",
+    "id": 5,
+    "description": "TravelMate is an app that helps you plan, organize, and enjoy your travels seamlessly. You can create itineraries, track flights and trains, get suggestions for local attractions, and receive real-time updates on delays or changes. Offline maps, currency converters, language phrasebooks, and weather forecasts are built in for convenience. TravelMate also has a social feature, letting you find other travelers nearby, share trip plans, or join group excursions. Whether for weekend getaways or long adventures, this app is your travel companion wherever you go.",
+    "size": 150,
+    "reviews": 4.1,
+    "ratingAvg": 4.3,
+    "downloads": 8.5,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 1600 },
+      { "name": "5 star", "count": 1420 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "MindfulMe",
+    "companyName": "ZenLab Studios",
+    "id": 6,
+    "description": "MindfulMe is a meditation and mindfulness app designed to help users reduce stress, improve sleep, and cultivate focus. It offers guided meditations, breathing exercises, ambient soundscapes, and daily reflections. You can set custom meditation durations, track your streaks, and log your mood before and after sessions. The app also includes background sounds like rain, forest, or white noise to help you relax. Daily challenges and reminders encourage consistent practice and deepen mindfulness over time.",
+    "size": 65,
+    "reviews": 2.0,
+    "ratingAvg": 4.7,
+    "downloads": 5,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 650 },
+      { "name": "5 star", "count": 1057 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "NewsFlash",
+    "companyName": "ByteStream Media",
+    "id": 7,
+    "description": "NewsFlash delivers breaking news, curated stories, and personalized topics all in one app. Users can customize their feed by selecting interests, mute sources, and follow specific journalists. The app supports offline reading, dark mode, and push notifications for urgent headlines. Multimedia content such as videos, podcasts, and infographics enrich the reading experience. NewsFlash also includes comments and community sections so you can engage with other readers and discuss trending events.",
+    "size": 80,
+    "reviews": 2.9,
+    "ratingAvg": 4.1,
+    "downloads": 9.1,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1150 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "GameZone Arcade",
+    "companyName": "FunPlay Co.",
+    "id": 8,
+    "description": "GameZone Arcade is a curated hub of casual games where users can enjoy a variety of genres: puzzles, platformers, arcade, and mini-adventures. New daily challenges, leaderboards, and achievement systems keep players engaged. The app also supports multiplayer modes so friends can compete or cooperate. The in-app store offers optional premium content, but most games are free to play. GameZone Arcade syncs progress across devices and includes parental controls for families.",
+    "size": 120,
+    "reviews": 5.6,
+    "ratingAvg": 4.0,
+    "downloads": 1.2,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "StudyBuddy",
+    "companyName": "LearnWave",
+    "id": 9,
+    "description": "StudyBuddy is the ultimate study companion app for students of all levels. The app offers flashcards, spaced repetition quizzes, study scheduling, and collaborative study rooms. You can join study groups, share notes, and get peer feedback. The integrated statistics dashboard shows which topics you need to focus on more, and adaptive quizzes help reinforce weak areas. With offline support and synchronization across devices, StudyBuddy helps you stay on top of your learning wherever you are.",
+    "size": 60,
+    "reviews": 2.3,
+    "ratingAvg": 4.8,
+    "downloads": 4.7,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1400 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "CookBook Pro",
+    "companyName": "Culinary Tech",
+    "id": 10,
+    "description": "CookBook Pro is a cooking and recipe app featuring thousands of recipes from around the world. You can browse by diet, cuisine, ingredient, or difficulty level. Each recipe includes step-by-step instructions, photos, and timers. The app also lets you generate shopping lists, plan weekly menus, and scale ingredient quantities automatically. With video tutorials, nutritional breakdowns, and voice control support, CookBook Pro helps both novice and experienced cooks create meals confidently.",
+    "size": 140,
+    "reviews": 3.1,
+    "ratingAvg": 4.3,
+    "downloads": 7,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1410 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "SleepWell",
+    "companyName": "DreamWorks Labs",
+    "id": 11,
+    "description": "SleepWell helps users improve sleep quality by offering features such as sleep tracking, white noise, bedtime reminders, and guided sleep meditations. The app monitors sleep cycles and provides suggestions to optimize rest routines. You can log dreams, set wake-up windows, and view detailed sleep analytics in charts. With personalized sleep coaching and nightly challenges, SleepWell supports holistic rest and recovery. It also adapts to day changes, travel, and shift schedules for consistent sleep harmony.",
+    "size": 70,
+    "reviews": 1.78,
+    "ratingAvg": 4.6,
+    "downloads": 3,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 55 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 930 }
+    ]
+  },
+  {
+    "image": "https://uxwing.com/wp-content/themes/uxwing/download/12-application/mobile-app-icon.png",
+    "title": "TaskMaster",
+    "companyName": "FlowApps",
+    "id": 12,
+    "description": "TaskMaster is a productivity and task management app aimed at helping users organize their life and work. You can create projects, subtasks, set deadlines, attach files, add reminders, and assign priorities. The app supports collaboration, shared tasks, and comments for teams or families. Gantt chart views, calendar integrations, and widgets make it accessible from anywhere. TaskMaster also tracks productivity insights and suggests focus sessions or break reminders to keep you on track and avoid burnout.",
+    "size": 110,
+    "reviews": 2.55,
+    "ratingAvg": 4.4,
+    "downloads": 6,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1040 }
+    ]
+  }
+]
