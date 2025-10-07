@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { NavLink } from 'react-router';
+import logoImg from '../../assets/logo.png'
+import { Github } from 'lucide-react';
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
@@ -11,36 +13,36 @@ const Navbar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                        <li><NavLink className={({ isActive }) => isActive && "underline"} to='/'>Home</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive && "underline"} to='/apps'>Apps</NavLink></li>
+                        <li><NavLink className={({ isActive }) => isActive && "underline"} to='/installation'>Installation</NavLink></li>
+
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <NavLink
+                    to='/'
+                    className="btn  text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-bold">
+                    <img
+                        src={logoImg}
+                        alt="logo"
+                        className='w-10'
+                    />
+                    HERO.IO
+                </NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                <ul className="menu menu-horizontal px-1 font-semibold">
+                    <li class="bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><NavLink className={({ isActive }) => isActive && "underline text-[#9F62F2]"} to='/'>Home</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive && "underline"} to='/apps'>Apps</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive && "underline"} to='/installation'>Installation</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <NavLink
+                    to='https://github.com/NusratJahanNila' className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">
+                        <Github />
+                    Contribute
+                </NavLink>
             </div>
         </div>
     );
