@@ -32,9 +32,9 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 font-semibold">
-                    <li class="bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]"><NavLink className={({ isActive }) => isActive && "underline text-[#9F62F2]"} to='/'>Home</NavLink></li>
-                    <li><NavLink className={({ isActive }) => isActive && "underline"} to='/apps'>Apps</NavLink></li>
-                    <li><NavLink className={({ isActive }) => isActive && "underline"} to='/installation'>Installation</NavLink></li>
+                    <li class=""><NavLink className={({ isActive }) => isActive && "underline  bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] "} to='/'>Home</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive && "underline bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] "} to='/apps'>Apps</NavLink></li>
+                    <li><NavLink className={({ isActive }) => isActive && "underline bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] "} to='/installation'>Installation</NavLink></li>
                 </ul>
             </div>
             <div className="navbar-end">

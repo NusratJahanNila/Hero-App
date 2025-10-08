@@ -5,7 +5,7 @@ import heroImg from '../../assets/hero.png';
 import { Link } from 'react-router';
 const Banner = () => {
     return (
-        <div className='my-10'>
+        <div className='py-10'>
             <div className="banner-1 text-center  max-w-6xl mx-auto">
                 <h1 className='md:text-7xl text-4xl font-bold'>We Build <br />
                     <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-bold'> Productive</span> Apps</h1>
