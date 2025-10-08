@@ -4,14 +4,11 @@ import reviewImg from '../../assets/icon-review.png';
 import { useParams } from 'react-router';
 import useApps from '../../Components/Hooks/useApps';
 import Spinner from '../../Components/Spinner/Spinner';
-import { useState } from 'react';
+
 import { addToLocalStorage } from '../../LocalStorage/addToLocalStorage';
 
 
 const AppDetails = () => {
-     // Install
-    // const [install,setInstall]=useState([]);
-
     const { apps,loading,error } = useApps();
     // console.log(apps)
 
