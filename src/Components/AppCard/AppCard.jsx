@@ -1,11 +1,12 @@
 import React from 'react';
 import downloadImg from '../../assets/icon-downloads.png';
 import ratingImg from '../../assets/icon-ratings.png';
+import { Link } from 'react-router';
 const AppCard = ({app}) => {
     // console.log(app);
     const {image,title,downloads,ratingAvg}=app;
     return (
-        <div>
+        <Link to='/appDetails'>
             <div className="card bg-base-100  shadow-sm">
                 <figure className='h-38 bg-cover'>
                     <img
@@ -30,7 +31,7 @@ const AppCard = ({app}) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
