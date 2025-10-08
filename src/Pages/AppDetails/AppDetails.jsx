@@ -4,9 +4,14 @@ import reviewImg from '../../assets/icon-review.png';
 import { useParams } from 'react-router';
 import useApps from '../../Components/Hooks/useApps';
 import Spinner from '../../Components/Spinner/Spinner';
+import { useState } from 'react';
+import { addToLocalStorage } from '../../LocalStorage/addToLocalStorage';
 
 
 const AppDetails = () => {
+     // Install
+    // const [install,setInstall]=useState([]);
+
     const { apps,loading,error } = useApps();
     // console.log(apps)
 
@@ -20,6 +25,10 @@ const AppDetails = () => {
     console.log(data);
     const {image,companyName,downloads,ratingAvg,reviews,size,title}=data;
 
+    // Installation
+    const handleInstall=(data)=>{
+        addToLocalStorage(data);
+    }
     return (
         <div className='bg-gray-100'>
             <div className='max-w-6xl mx-auto flex items-center gap-10 py-10'>
@@ -49,7 +58,7 @@ const AppDetails = () => {
                             <h3 className='text-3xl font-bold '>{reviews}K</h3>
                         </div>
                     </div>
-                    <button className='btn bg-[#00D390] text-white mt-3'>Install Now ({size}MB)</button>
+                    <button onClick={()=>handleInstall(data)} className='btn bg-[#00D390] text-white mt-3'>Install Now ({size}MB)</button>
                 </div>
             </div>
         </div>
