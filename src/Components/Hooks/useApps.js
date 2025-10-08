@@ -6,7 +6,7 @@ const useApps=()=>{
     const [error, setError] = useState(null);
 
     useEffect(()=>{
-        fetch('./appsData.json')
+        fetch('../appsData.json')
         .then(res=>res.json())
         .then(data=>setApps(data))
         .catch(err=>setError(err))

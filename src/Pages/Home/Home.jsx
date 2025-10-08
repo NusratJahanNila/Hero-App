@@ -4,6 +4,7 @@ import TrendingApps from '../../Components/FeaturedApps/TrendingApps';
 
 const Home = () => {
     return (
+
         <div className='bg-gray-100'>
             <Banner></Banner>
             <TrendingApps></TrendingApps>

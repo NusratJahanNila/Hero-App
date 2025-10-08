@@ -4,7 +4,7 @@ import AppCard from '../../Components/AppCard/AppCard';
 
 const Apps = () => {
     const { apps } = useApps();
-
+    // console.log(apps);
     const [search,setSearch]=useState('')
     const searchData=search.trim().toLowerCase();
     // console.log(searchData)
