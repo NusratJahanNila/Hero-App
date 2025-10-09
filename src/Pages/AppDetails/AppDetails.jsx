@@ -4,7 +4,7 @@ import useApps from '../../Components/Hooks/useApps';
 import Spinner from '../../Components/Spinner/Spinner';
 
 import { addToLocalStorage } from '../../LocalStorage/addToLocalStorage';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppDetailsInfo from '../../Components/AppDetailsInfo/AppDetailsInfo';
 import ErrorApp from '../ErrorApp/ErrorApp';
 import Chart from '../../Components/Chart/Chart';
@@ -14,6 +14,17 @@ import { toast, ToastContainer } from 'react-toastify';
 const AppDetails = () => {
     // disable button
     const [disable, setDisable] = useState(false)
+    // Disable Button
+    useEffect(()=>{
+        const disableData=localStorage.getItem('isDisable');
+        if(disableData==='disable'){
+            setDisable(true);
+        }
+        else{
+            setDisable(false);
+        }
+    },[])
+
     // fetch
     const { apps, loading, error } = useApps();
     console.log(apps)
@@ -34,8 +45,11 @@ const AppDetails = () => {
     const handleInstall = (data) => {
         toast(`${data.title} is Install Successfully!!`);
         addToLocalStorage(data);
+        // disable
+        localStorage.setItem('isDisable','disable')
         setDisable(true)
     }
+    
         return (
         <div className='bg-gray-100'>
             <div className='max-w-6xl mx-auto'>

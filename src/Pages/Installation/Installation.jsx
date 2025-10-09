@@ -9,14 +9,14 @@ import Spinner from '../../Components/Spinner/Spinner';
 
 
 const Installation = () => {
-    const {loading}=useApps();
+    const { loading } = useApps();
     // Install
     const [install, setInstall] = useState([]);
     console.log(install);
     useEffect(() => {
         const existData = getStoredData();
         if (existData) {
-           return setInstall(existData);
+            return setInstall(existData);
         }
     }, [])
 
@@ -27,9 +27,10 @@ const Installation = () => {
         setInstall(updateData);
         const storedData = JSON.stringify(updateData);
         localStorage.setItem('install', storedData);
+        // localStorage.removeItem('isDisable');
     }
-
     
+
     return (
         <div className=''>
             <div className='max-w-6xl mx-auto'>
@@ -44,7 +45,7 @@ const Installation = () => {
 
                 </div>
                 {
-                    loading?<Spinner></Spinner>:install.map(i => <div className='flex justify-between items-center border border-gray-200 rounded-2xl my-6 shadow-sm px-5 py-3'>
+                    loading ? <Spinner></Spinner> : install.map(i => <div className='flex justify-between items-center border border-gray-200 rounded-2xl my-6 shadow-sm px-5 py-3'>
                         <div className='flex gap-5 items-center'>
                             <div>
                                 <img src={i.image} alt="app" className='h-30 w-30 rounded-2xl' />
@@ -65,7 +66,7 @@ const Installation = () => {
                             </div>
                         </div>
                         <div>
-                            <button onClick={()=>handleUninstall(i.id)} className='btn bg-[#00D390] text-white mt-3'>Uninstall</button>
+                            <button onClick={() => handleUninstall(i.id)} className='btn bg-[#00D390] text-white mt-3'>Uninstall</button>
                         </div>
                     </div>)
                 }
