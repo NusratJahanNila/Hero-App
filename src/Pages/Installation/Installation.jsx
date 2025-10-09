@@ -3,10 +3,13 @@ import { getStoredData } from '../../LocalStorage/addToLocalStorage';
 import downloadImg from '../../assets/icon-downloads.png';
 import ratingImg from '../../assets/icon-ratings.png';
 import Sort from '../../Components/Sort/Sort';
+import useApps from '../../Components/Hooks/useApps';
+import Spinner from '../../Components/Spinner/Spinner';
 
 
 
 const Installation = () => {
+    const {loading}=useApps();
     // Install
     const [install, setInstall] = useState([]);
     console.log(install);
@@ -41,7 +44,7 @@ const Installation = () => {
 
                 </div>
                 {
-                    install.map(i => <div className='flex justify-between items-center border border-gray-200 rounded-2xl my-6 shadow-sm px-5 py-3'>
+                    loading?<Spinner></Spinner>:install.map(i => <div className='flex justify-between items-center border border-gray-200 rounded-2xl my-6 shadow-sm px-5 py-3'>
                         <div className='flex gap-5 items-center'>
                             <div>
                                 <img src={i.image} alt="app" className='h-30 w-30 rounded-2xl' />
