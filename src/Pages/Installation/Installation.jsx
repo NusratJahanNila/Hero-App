@@ -2,7 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { getStoredData } from '../../LocalStorage/addToLocalStorage';
 import downloadImg from '../../assets/icon-downloads.png';
 import ratingImg from '../../assets/icon-ratings.png';
+import Sort from '../../Components/Sort/Sort';
+
+
+
 const Installation = () => {
+    // Install
     const [install, setInstall] = useState([]);
     console.log(install);
     useEffect(() => {
@@ -20,8 +25,10 @@ const Installation = () => {
         const storedData = JSON.stringify(updateData);
         localStorage.setItem('install', storedData);
     }
+
+    
     return (
-        <div className='bg-gray-100 '>
+        <div className=''>
             <div className='max-w-6xl mx-auto'>
                 <div className='text-center py-10'>
                     <h2 className='text-3xl font-bold'>Your Installed Apps</h2>
@@ -30,13 +37,7 @@ const Installation = () => {
                 <div className='flex justify-between mt-4'>
                     <p className='text-xl font-bold'>({install.length}) Apps Found</p>
                     {/* sort bar */}
-                    <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn m-1">Sort By Size </div>
-                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                            <li><a>High-Low</a></li>
-                            <li><a>Low-High</a></li>
-                        </ul>
-                    </div>
+                    <Sort install={install} setInstall={setInstall}></Sort>
 
                 </div>
                 {
