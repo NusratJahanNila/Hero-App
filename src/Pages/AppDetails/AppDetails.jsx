@@ -7,6 +7,7 @@ import { addToLocalStorage } from '../../LocalStorage/addToLocalStorage';
 import { useState } from 'react';
 import AppDetailsInfo from '../../Components/AppDetailsInfo/AppDetailsInfo';
 import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import ErrorApp from '../ErrorApp/ErrorApp';
 
 
 const AppDetails = () => {
@@ -22,19 +23,20 @@ const AppDetails = () => {
     if (loading) return <Spinner></Spinner>;
     if (error) return <p className='h-screen flex text-center items-center justify-center text-2xl font-bold'>Failed to load data...</p>;
 
-    const data = apps.find(app => app.id === appId);
-    // console.log(data);
-    const { image, companyName, size, title } = data;
+    const data = apps.find(app => app.id === appId) || {};
 
+    if (Object.keys(data).length === 0) return <ErrorApp></ErrorApp>
+    // console.log(data);
+    const {image, companyName, size, title} = data;
 
     // Installation
     const handleInstall = (data) => {
-        addToLocalStorage(data);
+            addToLocalStorage(data);
         setDisable(true)
     }
-    return (
+        return (
         <div className='bg-gray-100'>
-            <div className='max-w-6xl mx-auto'> 
+            <div className='max-w-6xl mx-auto'>
                 {/* App Info */}
                 <div className=' flex items-center gap-10 py-10'>
                     <div className='w-1/4'>
@@ -71,7 +73,7 @@ const AppDetails = () => {
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
-                
+
                 <div className='border-t-2 border-gray-300 w-full my-4'></div>
 
                 {/* Description */}
@@ -82,7 +84,7 @@ const AppDetails = () => {
             </div>
 
         </div>
-    );
+        );
 };
 
-export default AppDetails;
+        export default AppDetails;
