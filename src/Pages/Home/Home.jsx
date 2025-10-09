@@ -4,6 +4,7 @@ import TrendingApps from '../../Components/FeaturedApps/TrendingApps';
 import useApps from '../../Components/Hooks/useApps';
 import Spinner from '../../Components/Spinner/Spinner';
 
+
 const Home = () => {
     const { loading } = useApps();
     return (

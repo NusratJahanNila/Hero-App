@@ -64,7 +64,9 @@ const Installation = () => {
                                 </div>
                             </div>
                         </div>
-                        <button onClick={()=>handleUninstall(i.id)} className='btn bg-[#00D390] text-white mt-3'>Uninstall</button>
+                        <div>
+                            <button onClick={()=>handleUninstall(i.id)} className='btn bg-[#00D390] text-white mt-3'>Uninstall</button>
+                        </div>
                     </div>)
                 }
             </div>

@@ -6,8 +6,9 @@ import Spinner from '../../Components/Spinner/Spinner';
 import { addToLocalStorage } from '../../LocalStorage/addToLocalStorage';
 import { useState } from 'react';
 import AppDetailsInfo from '../../Components/AppDetailsInfo/AppDetailsInfo';
-import { Bar, BarChart, CartesianGrid, Legend, Rectangle, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 import ErrorApp from '../ErrorApp/ErrorApp';
+import Chart from '../../Components/Chart/Chart';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 const AppDetails = () => {
@@ -31,7 +32,8 @@ const AppDetails = () => {
 
     // Installation
     const handleInstall = (data) => {
-            addToLocalStorage(data);
+        toast(`${data.title} is Install Successfully!!`);
+        addToLocalStorage(data);
         setDisable(true)
     }
         return (
@@ -54,6 +56,7 @@ const AppDetails = () => {
                             onClick={() => handleInstall(data)}
                             className='btn bg-[#00D390] text-white mt-3 '>{disable ? 'Installed' : `Install Now (${size}MB)`}
                         </button>
+                        <ToastContainer></ToastContainer>
                     </div>
                 </div>
 
@@ -61,18 +64,7 @@ const AppDetails = () => {
 
                 {/* Chart Data */}
                 <h2 className='font-bold text-2xl mb-6'>Ratings</h2>
-                <div className='w-[800px] h-[300px]  '>
-                    <ResponsiveContainer>
-                        <BarChart data={data.ratings} layout="vertical" >
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis type="number" />
-                            <YAxis dataKey="name" type="category" reversed />
-                            <Tooltip />
-                            <Legend />
-                            <Bar dataKey="count" fill="orange" />
-                        </BarChart>
-                    </ResponsiveContainer>
-                </div>
+                <Chart data={data}></Chart>
 
                 <div className='border-t-2 border-gray-300 w-full my-4'></div>
 

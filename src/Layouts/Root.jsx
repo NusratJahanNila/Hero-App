@@ -4,7 +4,6 @@ import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
 import useApps from '../Components/Hooks/useApps';
 import Spinner from '../Components/Spinner/Spinner';
-
 const Root = () => {
     const { loading } = useApps();
     return (
