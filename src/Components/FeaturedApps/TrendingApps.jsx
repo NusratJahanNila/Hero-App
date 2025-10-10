@@ -18,7 +18,7 @@ const TrendingApps = () => {
                 }
                 
             </div>
-            <div className='max-w-6xl mx-auto mb-4 text-center'>
+            <div className='max-w-6xl mx-auto p-3 text-center '>
                 <Link to='/apps' className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white">Show All</Link>
             </div>
         </div>

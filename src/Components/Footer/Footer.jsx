@@ -14,7 +14,7 @@ const Footer = () => {
                             alt="logo"
                             className='w-10'
                         />
-                        HERO.IO
+                        AppNest
                     </NavLink>
                 </aside>
                 <div className="flex flex-col justify-self-end">

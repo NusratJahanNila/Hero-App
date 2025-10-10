@@ -9,17 +9,17 @@ const Banner = () => {
             <div className="banner-1 text-center  max-w-6xl mx-auto">
                 <h1 className='md:text-7xl text-4xl font-bold'>We Build <br />
                     <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-bold'> Productive</span> Apps</h1>
-                <p className='text-[#627382] mt-4 text-sm md:text-md'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br></br>
+                <p className='text-[#627382] mt-4 text-sm md:text-md'>At AppNest, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting.<br></br>
                     Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
                 <div className='flex justify-center gap-4 mt-5'>
-                    <Link to='https://play.google.com/store/games?hl=en' className='btn btn-outline border-gray-300'>
+                    <Link to='https://play.google.com/store/games?hl=en' className='btn btn-outline border-gray-300 bg-white'>
                         <img
                             src={googlePlayImg} alt="googlePlay image"
                             className='w-5'
                         />
                         Google Play
                     </Link>
-                    <Link to='https://www.apple.com/app-store/' className='btn btn-outline border-gray-300'>
+                    <Link to='https://www.apple.com/app-store/' className='btn btn-outline border-gray-300 bg-white'>
                         <img
                             src={appStoreImag} alt="googlePlay image"
                             className='w-5'

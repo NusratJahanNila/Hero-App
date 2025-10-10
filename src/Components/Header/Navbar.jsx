@@ -28,7 +28,7 @@ const Navbar = () => {
                             alt="logo"
                             className='md:w-10 w-5 hidden md:block'
                         />
-                        HERO.IO
+                        AppNest
                     </NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
