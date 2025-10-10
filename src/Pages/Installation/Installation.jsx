@@ -5,6 +5,7 @@ import ratingImg from '../../assets/icon-ratings.png';
 import Sort from '../../Components/Sort/Sort';
 import useApps from '../../Components/Hooks/useApps';
 import Spinner from '../../Components/Spinner/Spinner';
+import { toast, ToastContainer } from 'react-toastify';
 
 
 
@@ -12,7 +13,6 @@ const Installation = () => {
     const { loading } = useApps();
     // Install
     const [install, setInstall] = useState([]);
-    const [disable, setDisable] = useState([]);
     // console.log(install);
     // Uninstall
     useEffect(() => {
@@ -29,17 +29,7 @@ const Installation = () => {
         setInstall(updateData);
         const storedData = JSON.stringify(updateData);
         localStorage.setItem('install', storedData);
-        
-
-        // Enable button
-        const enableDataStr=localStorage.getItem('disable');
-        const enableData=enableDataStr? JSON.parse(enableDataStr): [];
-        const updateVAlue=enableData.filter(app=>app.id !==id);
-        setDisable(updateVAlue);
-        let updateEnable=[...disable]
-
-        const updateEnableStr=JSON.stringify(updateEnable);
-        localStorage.setItem('disable',updateEnableStr)
+        toast('App is Uninstalled Successfully');
     }
     
 
@@ -56,6 +46,7 @@ const Installation = () => {
                     <Sort install={install} setInstall={setInstall}></Sort>
 
                 </div>
+                <ToastContainer></ToastContainer>
                 {
                     loading ? <Spinner></Spinner> : install.map(i => <div className='flex justify-between items-center border border-gray-200 rounded-2xl my-6 shadow-sm px-5 py-3'>
                         <div className='flex gap-5 items-center'>
