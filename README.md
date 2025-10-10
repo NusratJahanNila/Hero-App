@@ -1,16 +1,21 @@
-# React + Vite
+App Name:  Hero Apps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Description: 
+--------------
 
-Currently, two official plugins are available:
+Hero App is basically a platform that brings together a variety of mobile and desktop applications in one place. Users can easily search for their favorite apps, view detailed information (like app info, ratings with visible charts, and full descriptions), and install them directly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Once a user installs an app, it’s saved in local storage — so they can view or manage their installed apps anytime. The installed apps can also be sorted based on download count in either ascending or descending order. And if the user no longer needs an app, they can simply uninstall it with one click.
 
-## React Compiler
+In short, Hero App gives users a smart and interactive app store–like experience where they can search, install, sort, view details, and uninstall apps — all in one place.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+Technology :
+--------------
+1. HTML
+2. TailwindCSS
+3. JavaScript
+4. React JS
