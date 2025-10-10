@@ -22,7 +22,7 @@ const Navbar = () => {
                     </div>
                     <NavLink
                         to='/'
-                        className="btn md:text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-bold flex items-center">
+                        className=" md:text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2] font-bold flex items-center">
                         <img
                             src={logoImg}
                             alt="logo"
