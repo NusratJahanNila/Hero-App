@@ -34,6 +34,7 @@ const Apps = () => {
                 <div className='flex justify-between mt-4'>
                     <p className='text-xl font-bold'>({searchedApps.length}) Apps Found</p>
                     {/* Search bar */}
+                    {typing && <Spinner></Spinner>}
                     <label className="input">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <g
@@ -56,7 +57,7 @@ const Apps = () => {
                         />
 
                     </label>
-                    {typing && <Spinner></Spinner>}
+                    {/* {typing && <Spinner></Spinner>} */}
 
                 </div>
                 {
