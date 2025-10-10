@@ -60,7 +60,7 @@ const Apps = () => {
 
                 </div>
                 {
-                    loading ? <Spinner></Spinner> : searchedApps.length !== 0 ? <div className='grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto my-10'>
+                    loading ? <Spinner></Spinner> : searchedApps.length !== 0 ? <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto my-10'>
                         {
                             searchedApps.map(app => <AppCard key={app.id} app={app}></AppCard>)
                         }

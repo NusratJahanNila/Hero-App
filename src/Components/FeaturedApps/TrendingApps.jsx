@@ -12,7 +12,7 @@ const TrendingApps = () => {
                 <h2 className='text-3xl font-bold'>Trending Apps</h2>
                 <p className='text-gray-500'>Explore All Trending Apps on the Market developed by us</p>
             </div>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto my-10'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto my-10'>
                 {
                     trendingApps.map(app=><AppCard key={app.id} app={app}></AppCard>)
                 }

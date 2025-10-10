@@ -55,11 +55,11 @@ const AppDetails = () => {
                 {/* App Info */}
                 <div className=' flex items-center gap-10 py-10'>
                     <div className='w-1/4'>
-                        <img src={image} alt="app" className='h-63 w-full bg-cover ' />
+                        <img src={image} alt="app" className='h-40 md:h-63 w-full bg-cover ' />
                     </div>
                     <div className='w-3/4'>
-                        <h3 className='text-2xl font-bold'>{title}</h3>
-                        <p className='text-gray-600'>Developed by <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>{companyName}</span></p>
+                        <h3 className='md:text-2xl font-bold'>{title}</h3>
+                        <p className='text-sm md:text-md text-gray-600'>Developed by <span className='bg-clip-text text-transparent bg-gradient-to-r from-[#632EE3] to-[#9F62F2]'>{companyName}</span></p>
 
                         <div className='border-t-2 border-gray-300 w-full my-4'></div>
 

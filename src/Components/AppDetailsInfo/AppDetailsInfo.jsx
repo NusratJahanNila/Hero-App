@@ -7,19 +7,19 @@ const AppDetailsInfo = ({data}) => {
     return (
         <div className='flex gap-8'>
             <div>
-                <img src={downloadImg} alt="" />
-                <p className='text-gray-700 my-1'>Downloads</p>
-                <h3 className='text-3xl font-bold '>{downloads}M</h3>
+                <img src={downloadImg} alt="" className='w-6 md:w-8'/>
+                <p className='text-gray-700 my-1 text-sm md:text-lg'>Downloads</p>
+                <h3 className='text-xl md:text-3xl font-bold '>{downloads}M</h3>
             </div>
             <div>
-                <img src={ratingImg} alt="" />
-                <p className='text-gray-700 my-1'>Average Ratings</p>
-                <h3 className='text-3xl font-bold '>{ratingAvg}</h3>
+                <img src={ratingImg} alt="" className='w-6 md:w-8'/>
+                <p className='text-gray-700 my-1 text-sm md:text-lg'>Average Ratings</p>
+                <h3 className='text-xl md:text-3xl font-bold '>{ratingAvg}</h3>
             </div>
             <div>
-                <img src={reviewImg} alt="" />
-                <p className='text-gray-700 my-1'>Total Reviews</p>
-                <h3 className='text-3xl font-bold '>{reviews}K</h3>
+                <img src={reviewImg} alt="" className='w-6 md:w-8'/>
+                <p className='text-gray-700 my-1 text-sm md:text-lg'>Total Reviews</p>
+                <h3 className='text-xl md:text-3xl font-bold '>{reviews}K</h3>
             </div>
         </div>
     );
