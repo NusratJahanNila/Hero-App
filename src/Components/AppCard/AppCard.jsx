@@ -7,7 +7,7 @@ const AppCard = ({app}) => {
     const {id,image,title,downloads,ratingAvg}=app;
     return (
         <Link to={`/appDetails/${id}`}>
-            <div className="card bg-base-100 max-w-sm w-full  shadow-sm">
+            <div className="card bg-base-100 max-w-sm w-full  shadow-sm h-65">
                 <figure className='h-32 sm:h-40 overflow-hidden'>
                     <img
                         src={image}
@@ -19,13 +19,13 @@ const AppCard = ({app}) => {
                        {title}
                     </h2>
                     {/* Button */}
-                    <div className="card-actions justify-between mt-3">
+                    <div className="flex gap-5 md:gap-30 md:justify-between mt-3">
                         <button className="badge badge-ghost bg-[#F1F5E8] text-[#00D390]">
-                            <img src={downloadImg} alt="" className='w-4' />
+                            <img src={downloadImg} alt="" className='md:w-4 w-2' />
                             {downloads}M
                         </button>
                         <button className="badge badge-ghost bg-[#FFF0E1] text-[#FF8811]">
-                            <img src={ratingImg} alt="" className='w-4' />
+                            <img src={ratingImg} alt="" className='md:w-4 w-2' />
                             {ratingAvg}
                         </button>
                     </div>

@@ -49,19 +49,19 @@ const Installation = () => {
                 <ToastContainer></ToastContainer>
                 {
                     loading ? <Spinner></Spinner> : install.map(i => <div className='flex justify-between items-center border border-gray-200 rounded-2xl my-6 shadow-sm px-5 py-3'>
-                        <div className='flex gap-5 items-center'>
+                        <div className='flex gap-2 md:gap-5 items-center'>
                             <div>
-                                <img src={i.image} alt="app" className='h-30 w-30 rounded-2xl' />
+                                <img src={i.image} alt="app" className='h-15 w-15 md:h-30 md:w-30 rounded-2xl' />
                             </div>
                             <div>
                                 <h2 className='font-bold text-lg'>{i.title}</h2>
                                 <div className="card-actions  mt-3">
                                     <button className="badge badge-ghost text-[#00D390] font-semibold">
-                                        <img src={downloadImg} alt="" className='w-4' />
+                                        <img src={downloadImg} alt="" className='md:w-4 w-2' />
                                         {i.downloads}M
                                     </button>
                                     <button className="badge badge-ghost  text-[#FF8811] font-semibold">
-                                        <img src={ratingImg} alt="" className='w-4' />
+                                        <img src={ratingImg} alt="" className='md:w-4 w-2' />
                                         {i.ratingAvg}
                                     </button>
                                     <p className='text-gray-500 font-semibold'>{i.size} MB</p>
@@ -69,7 +69,7 @@ const Installation = () => {
                             </div>
                         </div>
                         <div>
-                            <button onClick={() => handleUninstall(i.id)} className='btn bg-[#00D390] text-white mt-3'>Uninstall</button>
+                            <button onClick={() => handleUninstall(i.id)} className='btn p-1 md:p-5 bg-[#00D390] text-white md:mt-3'>Uninstall</button>
                         </div>
                     </div>)
                 }

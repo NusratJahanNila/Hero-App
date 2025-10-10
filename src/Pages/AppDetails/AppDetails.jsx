@@ -55,7 +55,7 @@ const AppDetails = () => {
                 {/* App Info */}
                 <div className=' flex items-center gap-10 py-10'>
                     <div className='w-1/4'>
-                        <img src={image} alt="app" className='h-40 md:h-63 w-full bg-cover ' />
+                        <img src={image} alt="app" className='h-30 md:h-63 w-30 md:w-full bg-cover ' />
                     </div>
                     <div className='w-3/4'>
                         <h3 className='md:text-2xl font-bold'>{title}</h3>

@@ -5,7 +5,7 @@ import { Github } from 'lucide-react';
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100 shadow-sm">
-            <div className='flex gap-70 max-w-6xl mx-auto'>
+            <div className='flex gap-10 md:gap-70 max-w-6xl mx-auto'>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
