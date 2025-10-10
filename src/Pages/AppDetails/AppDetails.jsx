@@ -13,16 +13,12 @@ import { toast, ToastContainer } from 'react-toastify';
 
 const AppDetails = () => {
     // disable button
-    const [disable, setDisable] = useState(false)
+    const [disable, setDisable] = useState([])
     // Disable Button
     useEffect(()=>{
-        const disableData=localStorage.getItem('isDisable');
-        if(disableData==='disable'){
-            setDisable(true);
-        }
-        else{
-            setDisable(false);
-        }
+        const disableDataStr=localStorage.getItem('disable');
+        const disableData=disableDataStr? JSON.parse(disableDataStr): [];
+        setDisable(disableData);
     },[])
 
     // fetch
@@ -46,9 +42,12 @@ const AppDetails = () => {
         toast(`${data.title} is Install Successfully!!`);
         addToLocalStorage(data);
         // disable
-        localStorage.setItem('isDisable','disable')
-        setDisable(true)
+        const updateDisable=[...disable,data.id];
+        setDisable(updateDisable);
+        const updateDisableStr=JSON.stringify(updateDisable);
+        localStorage.setItem('disable',updateDisableStr)
     }
+    const aapDisable=disable.includes(data.id);
     
         return (
         <div className='bg-gray-100'>
@@ -66,9 +65,9 @@ const AppDetails = () => {
 
                         <AppDetailsInfo data={data}></AppDetailsInfo>
                         <button
-                            disabled={disable}
+                            disabled={aapDisable}
                             onClick={() => handleInstall(data)}
-                            className='btn bg-[#00D390] text-white mt-3 '>{disable ? 'Installed' : `Install Now (${size}MB)`}
+                            className='btn bg-[#00D390] text-white mt-3 '>{aapDisable ? 'Installed' : `Install Now (${size}MB)`}
                         </button>
                         <ToastContainer></ToastContainer>
                     </div>
