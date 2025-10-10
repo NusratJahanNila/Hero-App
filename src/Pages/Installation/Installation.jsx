@@ -12,7 +12,9 @@ const Installation = () => {
     const { loading } = useApps();
     // Install
     const [install, setInstall] = useState([]);
-    console.log(install);
+    const [disable, setDisable] = useState([]);
+    // console.log(install);
+    // Uninstall
     useEffect(() => {
         const existData = getStoredData();
         if (existData) {
@@ -27,7 +29,17 @@ const Installation = () => {
         setInstall(updateData);
         const storedData = JSON.stringify(updateData);
         localStorage.setItem('install', storedData);
-        // localStorage.removeItem('isDisable');
+        
+
+        // Enable button
+        const enableDataStr=localStorage.getItem('disable');
+        const enableData=enableDataStr? JSON.parse(enableDataStr): [];
+        const updateVAlue=enableData.filter(app=>app.id !==id);
+        setDisable(updateVAlue);
+        let updateEnable=[...disable]
+
+        const updateEnableStr=JSON.stringify(updateEnable);
+        localStorage.setItem('disable',updateEnableStr)
     }
     
 

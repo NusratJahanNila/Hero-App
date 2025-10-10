@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import useApps from '../../Components/Hooks/useApps';
 import Spinner from '../../Components/Spinner/Spinner';
 
-import { addToLocalStorage } from '../../LocalStorage/addToLocalStorage';
+import { addToLocalStorage, getStoredData } from '../../LocalStorage/addToLocalStorage';
 import { useEffect, useState } from 'react';
 import AppDetailsInfo from '../../Components/AppDetailsInfo/AppDetailsInfo';
 import ErrorApp from '../ErrorApp/ErrorApp';
@@ -13,12 +13,11 @@ import { toast, ToastContainer } from 'react-toastify';
 
 const AppDetails = () => {
     // disable button
-    const [disable, setDisable] = useState([])
-    // Disable Button
+    const [disable, setDisable] = useState(false)
     useEffect(()=>{
-        const disableDataStr=localStorage.getItem('disable');
-        const disableData=disableDataStr? JSON.parse(disableDataStr): [];
-        setDisable(disableData);
+        const existData=getStoredData();
+        const existIds=existData.map(app=>app.id);
+        setDisable(existIds);
     },[])
 
     // fetch
@@ -39,15 +38,16 @@ const AppDetails = () => {
 
     // Installation
     const handleInstall = (data) => {
-        toast(`${data.title} is Install Successfully!!`);
+        
         addToLocalStorage(data);
-        // disable
-        const updateDisable=[...disable,data.id];
-        setDisable(updateDisable);
-        const updateDisableStr=JSON.stringify(updateDisable);
-        localStorage.setItem('disable',updateDisableStr)
+        if(!disable.includes(data.id)){
+            toast(`${data.title} is Install Successfully!!`);
+            const updateDisable=[...disable,data.id];
+            setDisable(updateDisable);
+
+        }
     }
-    const aapDisable=disable.includes(data.id);
+    const isDisable=disable.includes(data.id);
     
         return (
         <div className='bg-gray-100'>
@@ -65,9 +65,9 @@ const AppDetails = () => {
 
                         <AppDetailsInfo data={data}></AppDetailsInfo>
                         <button
-                            disabled={aapDisable}
+                            disabled={isDisable}
                             onClick={() => handleInstall(data)}
-                            className='btn bg-[#00D390] text-white mt-3 '>{aapDisable ? 'Installed' : `Install Now (${size}MB)`}
+                            className='btn bg-[#00D390] text-white mt-3 '>{isDisable ? 'Installed' : `Install Now (${size}MB)`}
                         </button>
                         <ToastContainer></ToastContainer>
                     </div>
